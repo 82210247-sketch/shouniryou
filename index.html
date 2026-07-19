@@ -203,7 +203,7 @@
     "id": 2,
     "category": "病原生物に対する医薬品（抗菌薬・抗ウイルス等）",
     "generic": "アモキシシリン水和物",
-    "brand": "サワシリン細粒１０％",
+    "brand": "サワシリン細粒１０％／ワイドシリン細粒１０％",
     "forms": "細粒剤",
     "indication": "あり",
     "dosingText": "20〜40 mg/kg/日、3〜4回分割",
@@ -231,16 +231,78 @@
     "brand": "クラバモックス小児用配合ドライシロップ",
     "forms": "ドライシロップ(DS)",
     "indication": "あり",
-    "dosingText": "本剤として96.4 mg/kg/日（アモキシシリン90 mg/kg・クラブラン酸6.4 mg/kg）（2回・12時間毎・食直前）",
-    "maxText": "分包：体重帯別に既定量あり（6〜10kg:1.01g等）",
+    "dosingText": "添付文書の分包製剤・体重区分表に基づく固定用量（1日2回・12時間毎・食直前）。区分：6〜10kg 1日1.01g／11〜16kg 1日2.02g／17〜23kg 1日3.03g／24〜30kg 1日4.04g／31〜36kg 1日5.05g／37〜39kg 1日6.06g（いずれもドライシロップとしての量）。参考：本剤として96.4 mg/kg/日（アモキシシリン90 mg/kg・クラブラン酸6.4 mg/kg）相当。",
+    "maxText": "体重39kg超は添付文書の体重区分表に規定がないため、添付文書で個別に確認してください（ボトル製剤は体重×0.75mL/kg/日で調製する用法あり）。",
     "source": "添付文書（クラバモックス小児用配合ドライシロップ）",
-    "calcType": "mgkg_day",
+    "calcType": "weight_band",
     "mgkgMin": 96.4,
     "mgkgMax": 96.4,
     "timesMin": 2,
     "timesMax": 2,
-    "conc": null,
-    "ageBand": null
+    "conc": {
+      "type": "mgper",
+      "mg": 636.5,
+      "base": 1.0,
+      "unit": "g",
+      "product": "クラバモックス小児用配合ドライシロップ",
+      "form": "ドライシロップ(DS)"
+    },
+    "ageBand": null,
+    "weightBand": {
+      "bands": [
+        {
+          "minW": 6,
+          "maxW": 10,
+          "label": "体重6〜10kg",
+          "amount": 321.43,
+          "unit": "mg",
+          "perDose": true
+        },
+        {
+          "minW": 11,
+          "maxW": 16,
+          "label": "体重11〜16kg",
+          "amount": 642.87,
+          "unit": "mg",
+          "perDose": true
+        },
+        {
+          "minW": 17,
+          "maxW": 23,
+          "label": "体重17〜23kg",
+          "amount": 964.3,
+          "unit": "mg",
+          "perDose": true
+        },
+        {
+          "minW": 24,
+          "maxW": 30,
+          "label": "体重24〜30kg",
+          "amount": 1285.73,
+          "unit": "mg",
+          "perDose": true
+        },
+        {
+          "minW": 31,
+          "maxW": 36,
+          "label": "体重31〜36kg",
+          "amount": 1607.16,
+          "unit": "mg",
+          "perDose": true
+        },
+        {
+          "minW": 37,
+          "maxW": 39,
+          "label": "体重37〜39kg",
+          "amount": 1928.59,
+          "unit": "mg",
+          "perDose": true
+        }
+      ],
+      "timesMin": 2,
+      "timesMax": 2,
+      "note": "添付文書の分包製剤・体重区分別固定用量表に基づく（mg/kg換算ではなく区分ごとの規定量）。"
+    }
   },
   {
     "id": 4,
@@ -450,7 +512,14 @@
     "mgkgMax": 9.0,
     "timesMin": 3,
     "timesMax": 3,
-    "conc": null,
+    "conc": {
+      "type": "mgper",
+      "mg": 100,
+      "base": 1.0,
+      "unit": "g",
+      "product": "フロモックス小児用細粒１００ｍｇ",
+      "form": "細粒剤"
+    },
     "ageBand": null
   },
   {
@@ -468,7 +537,14 @@
     "mgkgMax": 3.0,
     "timesMin": 3,
     "timesMax": 3,
-    "conc": null,
+    "conc": {
+      "type": "mgper",
+      "mg": 100,
+      "base": 1.0,
+      "unit": "g",
+      "product": "メイアクトＭＳ小児用細粒１０％",
+      "form": "細粒剤"
+    },
     "ageBand": null
   },
   {
@@ -511,7 +587,14 @@
     "mgkgMax": 18.0,
     "timesMin": 3,
     "timesMax": 3,
-    "conc": null,
+    "conc": {
+      "type": "mgper",
+      "mg": 200,
+      "base": 1.0,
+      "unit": "g",
+      "product": "トミロン細粒小児用２０％",
+      "form": "細粒剤"
+    },
     "ageBand": null
   },
   {
@@ -529,7 +612,14 @@
     "mgkgMax": 3.0,
     "timesMin": 2,
     "timesMax": 3,
-    "conc": null,
+    "conc": {
+      "type": "mgper",
+      "mg": 50,
+      "base": 1.0,
+      "unit": "g",
+      "product": "バナンドライシロップ５％",
+      "form": "ドライシロップ(DS)"
+    },
     "ageBand": null
   },
   {
@@ -547,7 +637,14 @@
     "mgkgMax": 4.0,
     "timesMin": 2,
     "timesMax": 2,
-    "conc": null,
+    "conc": {
+      "type": "mgper",
+      "mg": 100,
+      "base": 1.0,
+      "unit": "g",
+      "product": "オラペネム小児用細粒１０％",
+      "form": "細粒剤"
+    },
     "ageBand": null
   },
   {
@@ -7350,6 +7447,31 @@
       "form": "ドライシロップ(DS)"
     },
     "ageBand": null
+  },
+  {
+    "id": 324,
+    "category": "病原生物に対する医薬品（抗菌薬・抗ウイルス等）",
+    "generic": "アモキシシリン水和物",
+    "brand": "ワイドシリン細粒２０％／アモキシシリン細粒２０％「ＴＣＫ」",
+    "forms": "細粒剤",
+    "indication": "あり",
+    "dosingText": "20〜40 mg/kg/日、3〜4回分割",
+    "maxText": "上限90 mg/kg/日（目安）",
+    "source": "添付文書（サワシリン細粒・ワイドシリン細粒 等）／湘南鎌倉総合病院小児薬用量表",
+    "calcType": "mgkg_day",
+    "mgkgMin": 20.0,
+    "mgkgMax": 40.0,
+    "timesMin": 3,
+    "timesMax": 4,
+    "conc": {
+      "type": "mgper",
+      "mg": 200,
+      "base": 1.0,
+      "unit": "g",
+      "product": "ワイドシリン細粒２０％",
+      "form": "細粒剤"
+    },
+    "ageBand": null
   }
 ]</script>
 <script>
@@ -7392,7 +7514,8 @@ function renderOptions(filterText){
       opt.value = d.id;
       const tagMap = {reference:'［参照のみ］', age_band:'［年齢で計算］', kampo_age_fraction:'［年齢で計算］', weight_band:'［体重で計算］'};
       const tag = tagMap[d.calcType] || '';
-      opt.textContent = d.generic + '（' + d.brand.split('／')[0] + '）' + (tag?(' '+tag):'');
+      const brandDisp = d.brand.replace(/（先発品なし／後発品のみ収載）/g,'').replace(/（先発品なし）/g,'').trim();
+      opt.textContent = d.generic + '（' + brandDisp + '）' + (tag?(' '+tag):'');
       og.appendChild(opt);
     });
     drugSelect.appendChild(og);
